@@ -3,7 +3,7 @@
 --->  
 
 <div align="center">
-  <img src="https://github.com/TacticalDetect/TacticalDetect/blob/main/Banner.jpg" alt="TacticalDetect - Entity Behavioral Analysis Framework" width="100%"/>
+  <img src="https://github.com/user-attachments/assets/c75919d6-0ab6-478a-889e-2547685103e6" alt="TacticalDetect - Entity Behavioral Analysis Framework" width="100%"/>
 </div>
 
 <h2 align="center"> 🔍 Whoami</h2>
