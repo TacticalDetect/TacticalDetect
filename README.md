@@ -12,7 +12,7 @@
   </samp>
   <br> <br>
   <a href="https://www.credly.com/badges/8c22a72e-a615-4d0d-b98c-c87363e926f8">
-    <img src="https://images.credly.com/size/110x110/images/79c31c1e-f5d9-494e-96d0-d7f2f59fff06/image.png" alt="GIAC Reverse Engineering Malware (GREM)" />
+    <img src="https://github.com/user-attachments/assets/6c56748e-c9d7-4429-a5e1-75eddced6fb0" alt="GIAC Reverse Engineering Malware (GREM)" />
   </a>
 </p>
 
