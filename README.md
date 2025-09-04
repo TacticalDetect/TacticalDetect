@@ -145,8 +145,8 @@ Timeline analysis and sequence correlation
 
 <h2  align="center">🔍 Check Out My Projects & Tools ⬇️ </h2>
 <p align="center">
-  <a href="https://github.com/yourusername/TTB_Bots_v2">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=yourusername&repo=TTB_Bots_v2&theme=dark" />
+  <a href="https://github.com/TacticalDetect/TTB_BOTS_v2">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=TacticalDetect&repo=TTB_BOTS_v2&theme=dark" />
   </a>
 </p>
 
