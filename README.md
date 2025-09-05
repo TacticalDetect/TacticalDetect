@@ -8,7 +8,7 @@
 
 <h2 align="center"> 🔍 Whoami</h2>
 <p align="center">
-  <samp>A Senior Threat Hunter Lead with 10+ years in security operations, specializing in multi-dimensional threat detection and quantifiable ROI frameworks. Expert in transforming traditional log analysis into graph-based detection strategies that reduce analysis and executive decision time. SANS GIAC certified professional who has implemented enterprise-wide telemetry pipelines covering 13K+ hosts while achieving 80% true positive rates.
+  <samp>A Senior Threat Hunter Lead with 10+ years in security operations, specializing in multi-dimensional threat detection and quantifiable ROI frameworks. Expert in transforming traditional log analysis into graph-based detection strategies that reduce analysis and executive decision time.
   </samp>
   <br> <br>
   <a href="https://www.credly.com/badges/8c22a72e-a615-4d0d-b98c-c87363e926f8">
