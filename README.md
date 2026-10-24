@@ -1,20 +1,109 @@
 <!--
-**yourusername/yourusername** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
---->  
+**TacticalDetect/TacticalDetect** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Banner: replace the user-attachments URL below with assets/banner.png once the image is committed to this repo.
+--->
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c75919d6-0ab6-478a-889e-2547685103e6" alt="TacticalDetect - Entity Behavioral Analysis Framework" width="100%"/>
+  <img src="https://github.com/user-attachments/assets/c75919d6-0ab6-478a-889e-2547685103e6" alt="TacticalDetect" width="100%"/>
 </div>
 
-<h2 align="center"> 🔍 Whoami</h2>
+<h2 align="center">🔍 Whoami</h2>
 <p align="center">
-  <samp>A Senior Threat Hunter Lead with 10+ years in security operations, specializing in multi-dimensional threat detection and quantifiable ROI frameworks. Expert in transforming traditional log analysis into graph-based detection strategies that reduce analysis and executive decision time.
+  <samp>
+  Lead Threat Hunter at an MDR firm, with 12+ years across military cyber operations and enterprise defense. I lead hunts across hundreds of client environments on Splunk-based SIEMs, and I write about the part most hunt reports skip. Most hunts end with nothing found. The hard part is knowing whether that means the environment is clean or the telemetry never showed you the answer.
   </samp>
-  <br> <br>
+  <br><br>
+  <samp>Detection Engineering | Link Analysis | Unsupervised ML | Splunk | MITRE ATT&CK</samp>
+  <br><br>
 </p>
 <hr>
 
-<h2 align="center"> 🛠️ Tools of Trade</h2>
+<h2 align="center">🧭 How I Hunt</h2>
+<p align="center">
+  <samp>Author of a security analytics framework built on a 6W data model, a Four-Lens Visualization Grammar, and one principle. Hunt what the attacker cannot avoid. Identities rotate. Mechanisms persist.</samp>
+</p>
+
+<table>
+<tr>
+<td width="25%" align="center">
+
+**📊 Statistical Lens**
+<br>
+Prevalence, rarity, and baselines that tell you how unusual a behavior is
+
+</td>
+<td width="25%" align="center">
+
+**🕸️ Relationship Lens**
+<br>
+Property graphs that show what tables obscure
+
+</td>
+<td width="25%" align="center">
+
+**🧩 Semantic Lens**
+<br>
+Behavioral clustering across low-fidelity observations
+
+</td>
+<td width="25%" align="center">
+
+**⏱️ Temporal Lens**
+<br>
+Sequence and timing that turn clusters into an intrusion story
+
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <samp>The questions an analyst must answer drive the data model. Three or more behavior clusters start to tell an intrusion story. Investigations run from first harm signal forward to worst case, then backward to fill gaps until the narrative is complete.</samp>
+</p>
+<hr>
+
+<h2 align="center">📉 Why Finding Nothing Is a Result</h2>
+
+```mermaid
+flowchart LR
+    subgraph P[AI helps plan]
+        Q([Question an operator<br>must answer]) --> M[Data model<br>chosen by the question]
+    end
+    subgraph X[The search does the math]
+        L[Four lenses<br>statistical, relationship,<br>semantic, temporal] --> C{Behavior<br>clusters?}
+    end
+    subgraph R[AI helps read]
+        S[Intrusion story<br>forward to worst case,<br>backward to fill gaps]
+    end
+    subgraph V[A person owns the verdict]
+        N{{Nothing found}}
+        E[Environment<br>is clean]
+        B[Telemetry never<br>showed the answer]
+    end
+    M --> L
+    C -->|three or more| S
+    C -->|none| N
+    N --> E
+    N --> B
+    B -.->|close the gap| M
+
+    classDef fork fill:#42c767,stroke:#1a3a52,color:#101320,stroke-width:2px
+    classDef base fill:#1a3a52,stroke:#1a3a52,color:#ffffff
+    classDef blind fill:#ffffff,stroke:#e74c3c,color:#2d3436,stroke-dasharray:4 2
+    class N fork
+    class Q,M,L,C,S,E base
+    class B blind
+    style P fill:#ffffff,stroke:#8b8b8b,color:#8b8b8b,stroke-dasharray:3 3
+    style X fill:#ffffff,stroke:#8b8b8b,color:#8b8b8b,stroke-dasharray:3 3
+    style R fill:#ffffff,stroke:#8b8b8b,color:#8b8b8b,stroke-dasharray:3 3
+    style V fill:#ffffff,stroke:#8b8b8b,color:#8b8b8b,stroke-dasharray:3 3
+```
+
+<p align="center">
+  <samp>Most hunts end with nothing found. The hard part is knowing which branch you are on.</samp>
+</p>
+<hr>
+
+<h2 align="center">🛠️ Tools of Trade</h2>
 
 <h3 align="center">Security Platforms</h3>
 <p align="center">
@@ -26,7 +115,7 @@
 
 <h3 align="center">Query Languages</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/SPL%20(Splunk)-%23000000.svg?&style=for-the-badge&logo=splunk&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/SPL%20%2F%20SPL2%20(Splunk)-%23000000.svg?&style=for-the-badge&logo=splunk&logoColor=white" />&nbsp;&nbsp;
   <img src="https://img.shields.io/badge/KQL%20(Kusto)-%230078D4.svg?&style=for-the-badge&logo=microsoftazure&logoColor=white" />&nbsp;&nbsp;
   <img src="https://img.shields.io/badge/CQL%20(CrowdStrike)-%23E01F27.svg?&style=for-the-badge&logo=crowdstrike&logoColor=white" />&nbsp;&nbsp;
   <img src="https://img.shields.io/badge/YARA--L%20(Google)-%234285F4.svg?&style=for-the-badge&logo=google&logoColor=white" />&nbsp;&nbsp;
@@ -34,10 +123,11 @@
 
 <h3 align="center">Threat Intelligence & Analysis</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/MITRE_ATT%26CK-%23FF0000.svg?&style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgBhZLBDYJAEEXfLGtBCVqBJWgFWoIlYAVagpZgCVqBVqAVYAVYgVZgJ/5JJiEhwHLhJZPM7Mz/M7O7A0opBCmltMS2OI7jPIqiF0EQXPH9JtwSiwghXCQUwm/sE5swDN94LwiC0PM8hzAMW6y1C1zXdUWH6rquC5LvummaFn3fP5MkCV3XPbHWbnied0TsYKUoimdZlmld121N09zbtn2SUtZKqQNBxhhDwP1vmqYaY37DMNyJFvMHrLXOP9KnYFl5AJh/AAAAAElFTkSuQmCC&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/MITRE_ATT%26CK-%231a3a52.svg?&style=for-the-badge&logoColor=white" />&nbsp;&nbsp;
   <img src="https://img.shields.io/badge/VirusTotal-%23394EFF.svg?&style=for-the-badge&logo=virustotal&logoColor=white" />&nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/OpenCTI-%23FF6B35.svg?&style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgBhZLBDYJAEEXfLGtBCVqBJWgFWoIlYAVagpZgCVqBVqAVYAVYgVZgJ/5JJiEhwHLhJZPM7Mz/M7O7A0opBCmltMS2OI7jPIqiF0EQXPH9JtwSiwghXCQUwm/sE5swDN94LwiC0PM8hzAMW6y1C1zXdUWH6rquC5LvummaFn3fP5MkCV3XPbHWbnied0TsYKUoimdZlmld121N09zbtn2SUtZKqQNBxhhDwP1vmqYaY37DMNyJFvMHrLXOP9KnYFl5AJh/AAAAAElFTkSuQmCC&logoColor=white" />&nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/STIX_2.1-%23525DDC.svg?&style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgBhZLBDYJAEEXfLGtBCVqBJWgFWoIlYAVagpZgCVqBVqAVYAVYgVZgJ/5JJiEhwHLhJZPM7Mz/M7O7A0opBCmltMS2OI7jPIqiF0EQXPH9JtwSiwghXCQUwm/sE5swDN94LwiC0PM8hzAMW6y1C1zXdUWH6rquC5LvummaFn3fP5MkCV3XPbHWbnied0TsYKUoimdZlmld121N09zbtn2SUtZKqQNBxhhDwP1vmqYaY37DMNyJFvMHrLXOP9KnYFl5AJh/AAAAAElFTkSuQmCC&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/OpenCTI-%231a3a52.svg?&style=for-the-badge&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/STIX_2.1-%231a3a52.svg?&style=for-the-badge&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/Shodan-%231a3a52.svg?&style=for-the-badge&logoColor=white" />&nbsp;&nbsp;
 </p>
 
 <h3 align="center">Development & Automation</h3>
@@ -51,111 +141,55 @@
 
 <h3 align="center">Visualization & Analytics</h3>
 <p align="center">
+  <img src="https://img.shields.io/badge/Splunk_Network_Diagram_Viz-%231a3a52.svg?&style=for-the-badge&logoColor=white" />&nbsp;&nbsp;
   <img src="https://img.shields.io/badge/D3.js-%23F68212.svg?&style=for-the-badge&logo=d3.js&logoColor=white" />&nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Vis.js-%234FC08D.svg?&style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgBhZLBDYJAEEXfLGtBCVqBJWgFWoIlYAVagpZgCVqBVqAVYAVYgVZgJ/5JJiEhwHLhJZPM7Mz/M7O7A0opBCmltMS2OI7jPIqiF0EQXPH9JtwSiwghXCQUwm/sE5swDN94LwiC0PM8hzAMW6y1C1zXdUWH6rquC5LvummaFn3fP5MkCV3XPbHWbnied0TsYKUoimdZlmld121N09zbtn2SUtZKqQNBxhhDwP1vmqYaY37DMNyJFvMHrLXOP9KnYFl5AJh/AAAAAElFTkSuQmCC&logoColor=white" />&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/Vis.js-%234FC08D.svg?&style=for-the-badge&logoColor=white" />&nbsp;&nbsp;
 </p>
-
 <hr>
 
-<h2 align="center"> 🧠 Technical Expertise</h2>
-
-<table>
-<tr>
-<td width="50%">
-
-<h3 align="center">Malware Analyst/Reverse Engineer Skills</h3>
-
-- **Code Analysis**: Reading and understanding program flow for threat detection
-- **Automation**: Python scripting for malware analysis and detection engineering
-- **Data Manipulation**: Parsing binary data, logs, and network traffic at scale
-- **Tool Development**: Custom analysis scripts and detection frameworks
-- **Debugging**: Following code execution paths to identify malicious behavior
-
-</td>
-<td width="50%">
-
-<h3 align="center">Query Language Mastery = Programming Logic</h3>
-
-My expertise across SPL, KQL, YARA-L, and CQL demonstrates:
-- **Conditional Logic**: Complex if/then/else decision trees
-- **Data Filtering**: Advanced where clauses and field extractions
-- **Aggregations**: Statistical analysis with stats, group by operations
-- **Pattern Matching**: Regex and behavioral pattern recognition
-- **Time-based Operations**: Temporal correlation and sequence detection
-- **Complex Joins**: Multi-source data correlation and enrichment
-
-</td>
-</tr>
-</table>
-
-<h3 align="center">EBAF - Entity Behavioral Analysis Framework</h3>
-<p align="center"><strong>Extract → Baseline → Analyze → Focus</strong></p>
-
-<table>
-<tr>
-<td width="25%" align="center">
-
-**📊 Statistical Lens**
-<br>
-Anomaly detection through heatgrids and Z-scores
-
-</td>
-<td width="25%" align="center">
-
-**🕸️ Relationship Lens**
-<br>
-Graph analysis and entity connection mapping
-
-</td>
-<td width="25%" align="center">
-
-**🧩 Semantic Lens**
-<br>
-Behavioral clustering and pattern recognition
-
-</td>
-<td width="25%" align="center">
-
-**⏱️ Temporal Lens**
-<br>
-Timeline analysis and sequence correlation
-
-</td>
-</tr>
-</table>
-
-<hr>
-
-<h2  align="center">💡 Current Focus - The TacticalDetect Journey</h2>
+<h2 align="center">💡 Current Focus</h2>
 <p align="center">
   <samp>
-    🔮 Implementing EBAF: 4-lens analytical methodology across enterprise environments<br>
-    📈 Quantifying threat hunting ROI through Five Core Values<br>
-    🎪 Proving Detection & Prevention value through Visual Intelligence<br>
-    📚 Building graph-based threat analysis for multi-dimensional detection<br>
-    🚀 Transforming reactive hunting into proactive detection engineering<br>
+    🕸️ TacticalGraph, a property graph investigation layer built on Splunk Network Diagram Viz<br>
+    📉 Confirmed negatives, or why finding nothing can mean the hunt worked<br>
+    🧩 Role resolution, telling who participated in a behavior from who merely got mentioned<br>
+    🤖 Where AI belongs in a hunt. The search does the math, AI helps plan and read, a person owns the verdict<br>
+    🧰 A skill library for hunt mission planning, graph construction, SPL, SPL2, and KQL hunting<br>
   </samp>
 </p>
-
 <hr>
 
-<h2  align="center">🔍 Check Out My Projects & Tools ⬇️ </h2>
+<h2 align="center">📝 Writing & Research</h2>
+<p align="center">
+  <samp>
+    <b>Can't Hide in 3D</b> (THOR Collective Dispatch, Sep 2025)<br>
+    <b>Trojan Packages</b> (Deepwatch, Oct 2025)<br>
+    <b>Your Device Code Phishing Detection Probably Doesn't Work</b> (Deepwatch, May 2026)<br>
+    <b>Five Ideas, One Hunt</b> (TacticalDetect Substack, Oct 2026)<br>
+    <br>
+    Cited in <i>Advanced Cyber Threat Intelligence and Hunting</i> (Packt, 2026) for TTB framework work.<br>
+    Quoted in the Wall Street Journal and Detection Engineering Weekly, among 14+ media citations.
+  </samp>
+</p>
+<p align="center">
+  <a target="_blank" href="https://tacticaldetect.substack.com"><img src="https://img.shields.io/badge/TacticalDetect_Blog-%2342c767.svg?&style=for-the-badge&logo=substack&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;
+  <a target="_blank" href="https://tacticaldetect.substack.com/p/five-ideas-one-hunt"><img src="https://img.shields.io/badge/Five_Ideas,_One_Hunt-%234a9fd8.svg?&style=for-the-badge&logoColor=white" /></a>
+</p>
+<hr>
+
+<h2 align="center">🔍 Projects & Tools</h2>
 <p align="center">
   <a href="https://github.com/TacticalDetect/TTB_BOTS_v2">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=TacticalDetect&repo=TTB_BOTS_v2&theme=dark" />
   </a>
 </p>
-
-<hr>
-
-<h2 align="center">📝 My Articles & Research</h2>
-<p align="center" align='right'>
-  <a target="_blank"href="https://tacticaldetect.substack.com"><img src="https://img.shields.io/badge/TacticalDetect_Blog-%23FF6719.svg?&style=for-the-badge&logo=substack&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;
-</p>
-
-<hr>
-
-<h2  align="center">📫 Connect With Me</h2>
 <p align="center">
-  <a target="_blank"href="https://www.linkedin.com/in/certisf/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <samp>The SPL behind "Can't Hide in 3D", MIT licensed.</samp>
+</p>
+<hr>
+
+<h2 align="center">📫 Connect</h2>
+<p align="center">
+  <a target="_blank" href="https://www.linkedin.com/in/certisf/"><img src="https://img.shields.io/badge/LinkedIn-%231a3a52.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a target="_blank" href="https://tacticaldetect.substack.com"><img src="https://img.shields.io/badge/Substack-%2342c767.svg?&style=for-the-badge&logo=substack&logoColor=white" /></a>
 </p>
