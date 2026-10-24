@@ -65,16 +65,16 @@ Sequence and timing that turn clusters into an intrusion story
 
 ```mermaid
 flowchart LR
-    subgraph P[AI helps plan]
+    subgraph P[Plan. A person, with AI help]
         Q([Question an operator<br>must answer]) --> M[Data model<br>chosen by the question]
     end
-    subgraph X[The search does the math]
+    subgraph X[Compute. The search, no AI]
         L[Four lenses<br>statistical, relationship,<br>semantic, temporal] --> C{Behavior<br>clusters?}
     end
-    subgraph R[AI helps read]
+    subgraph R[Read. A person, with AI help]
         S[Intrusion story<br>forward to worst case,<br>backward to fill gaps]
     end
-    subgraph V[A person owns the verdict]
+    subgraph V[Verdict. A person only]
         N{{Nothing found}}
         E[Environment<br>is clean]
         B[Telemetry never<br>showed the answer]
@@ -167,12 +167,12 @@ flowchart LR
     <b>Your Device Code Phishing Detection Probably Doesn't Work</b> (Deepwatch, May 2026)<br>
     <b>Five Ideas, One Hunt</b> (TacticalDetect Substack, Oct 2026)<br>
     <br>
-    Cited in <i>Advanced Cyber Threat Intelligence and Hunting</i> (Packt, 2026) for TTB framework work.<br>
-    Quoted in the Wall Street Journal and Detection Engineering Weekly, among 14+ media citations.
+    "Can't Hide in 3D" is among the first practical SPL implementations of MITRE's Time-Terrain-Behavior framework. Featured in Detection Engineering Weekly's "State of the Art" and extended in <i>Advanced Cyber Threat Intelligence and Hunting</i> (Tiepolo and Sorensen, Packt, 2026).<br>
+    Expert commentary cited across the Wall Street Journal, CSO Online, Dark Reading, SC World, MSSP Alert, and PCMag. 14 citations across 10 publications.
   </samp>
 </p>
 <p align="center">
-  <a target="_blank" href="https://tacticaldetect.substack.com"><img src="https://img.shields.io/badge/TacticalDetect_Blog-%2342c767.svg?&style=for-the-badge&logo=substack&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;
+  <a target="_blank" href="https://tacticaldetect.substack.com/about"><img src="https://img.shields.io/badge/TacticalDetect_Blog-%2342c767.svg?&style=for-the-badge&logo=substack&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;
   <a target="_blank" href="https://tacticaldetect.substack.com/p/five-ideas-one-hunt"><img src="https://img.shields.io/badge/Five_Ideas,_One_Hunt-%234a9fd8.svg?&style=for-the-badge&logoColor=white" /></a>
 </p>
 <hr>
@@ -191,5 +191,9 @@ flowchart LR
 <h2 align="center">📫 Connect</h2>
 <p align="center">
   <a target="_blank" href="https://www.linkedin.com/in/certisf/"><img src="https://img.shields.io/badge/LinkedIn-%231a3a52.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a target="_blank" href="https://tacticaldetect.substack.com"><img src="https://img.shields.io/badge/Substack-%2342c767.svg?&style=for-the-badge&logo=substack&logoColor=white" /></a>
+</p>
+<hr>
+
+<p align="center">
+  <samp><i>I am an employee of Deepwatch. All comments, posts, and thoughts are my own and do not necessarily reflect the positions, strategies, or opinions of the company.</i></samp>
 </p>
