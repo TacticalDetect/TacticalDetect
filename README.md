@@ -4,7 +4,7 @@ Banner: replace the user-attachments URL below with assets/banner.png once the i
 --->
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c75919d6-0ab6-478a-889e-2547685103e6" alt="TacticalDetect" width="100%"/>
+  <img src="https://github.com/user-attachments/assets/eb52b89a-3aa9-4d06-b552-d5d305581ab4" alt="TacticalDetect" width="100%"/>
 </div>
 
 <h2 align="center">🔍 Whoami</h2>
