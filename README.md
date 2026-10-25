@@ -1,6 +1,6 @@
 <!--
 **TacticalDetect/TacticalDetect** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-Banner: replace the user-attachments URL below with assets/banner.png once the image is committed to this repo.
+Banner: replace the user-attachments URL below with assets/tacticaldetect_four_moves.png once the image is committed to this repo.
 --->
 
 <div align="center">
@@ -65,37 +65,25 @@ Sequence and timing that turn clusters into an intrusion story
 
 ```mermaid
 flowchart LR
-    subgraph P[Plan. A person, with AI help]
-        Q([Question an operator<br>must answer]) --> M[Data model<br>chosen by the question]
-    end
-    subgraph X[Compute. The search, no AI]
-        L[Four lenses<br>statistical, relationship,<br>semantic, temporal] --> C{Behavior<br>clusters?}
-    end
-    subgraph R[Read. A person, with AI help]
-        S[Intrusion story<br>forward to worst case,<br>backward to fill gaps]
-    end
-    subgraph V[Verdict. A person only]
-        N{{Nothing found}}
-        E[Environment<br>is clean]
-        B[Telemetry never<br>showed the answer]
-    end
-    M --> L
-    C -->|three or more| S
-    C -->|none| N
-    N --> E
-    N --> B
+    Q([Operator's<br>question]) --> M[Data model]
+    M --> L[Four lenses]
+    L --> C{Behavior<br>clusters?}
+    C -->|three or more| S[Intrusion<br>story]
+    C -->|none| N{{Nothing found}}
+    N --> G{Could the<br>telemetry<br>show it?}
+    G -->|yes| E[Clean]
+    G -->|no| B[Blind spot]
+    S --> V([Verdict<br>a person])
+    E --> V
+    B --> V
     B -.->|close the gap| M
 
     classDef fork fill:#42c767,stroke:#1a3a52,color:#101320,stroke-width:2px
     classDef base fill:#1a3a52,stroke:#1a3a52,color:#ffffff
     classDef blind fill:#ffffff,stroke:#e74c3c,color:#2d3436,stroke-dasharray:4 2
     class N fork
-    class Q,M,L,C,S,E base
+    class Q,M,L,C,S,G,E,V base
     class B blind
-    style P fill:#ffffff,stroke:#8b8b8b,color:#8b8b8b,stroke-dasharray:3 3
-    style X fill:#ffffff,stroke:#8b8b8b,color:#8b8b8b,stroke-dasharray:3 3
-    style R fill:#ffffff,stroke:#8b8b8b,color:#8b8b8b,stroke-dasharray:3 3
-    style V fill:#ffffff,stroke:#8b8b8b,color:#8b8b8b,stroke-dasharray:3 3
 ```
 
 <p align="center">
